@@ -11,6 +11,7 @@
   },
   "scripts": {
     "start": "node server",
+    "dev": "nodemon server",
     "test": "lab -a @hapi/code -L",
     "lint": "eslint ."
   },
@@ -29,8 +30,9 @@
     "confidence": "4.x.x",
     "dotenv": "8.x.x",
     "eslint": "6.x.x",
-    "hpal": "2.x.x",
+    "hpal": "^2.4.0",
     "hpal-debug": "1.x.x",
+    "nodemon": "^2.0.2",
     "toys": "2.x.x"
   }
 }
