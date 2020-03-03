@@ -15,3 +15,12 @@ The point of this project is to try a basic kubernetes cluster architecture with
 - 1 Cloud Endpoint API Gateway
 
 This infrastructure will be hosted on GCP.
+
+# Features
+
+- [ ] Server replication and scaling
+- [ ] Database pod
+- [ ] Database backup
+- [ ] Logging
+- [ ] Monitoring
+
