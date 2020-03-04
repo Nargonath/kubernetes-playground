@@ -24,3 +24,6 @@ This infrastructure will be hosted on GCP.
 - [ ] Logging
 - [ ] Monitoring
 
+# Requirements
+
+To work with GCP Terraform needs a service account key.
