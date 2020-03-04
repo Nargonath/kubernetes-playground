@@ -102,3 +102,5 @@ dist
 
 # TernJS port file
 .tern-port
+
+test-k8s-8ac7939cd8d0.json
