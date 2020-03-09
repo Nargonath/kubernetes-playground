@@ -1,10 +1,10 @@
 variable "service_account_key" {
-  type        = "string"
+  type        = string
   description = "Path to GCP service account key"
 }
 
 variable "project_id" {
-  type        = "string"
+  type        = string
   description = "GCP project ID"
 }
 
