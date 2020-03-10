@@ -42,7 +42,7 @@ resource "google_container_cluster" "primary" {
 }
 
 resource "google_container_node_pool" "primary_preemptible_nodes" {
-  name       = "primary_node_pool"
+  name       = "primary-node-pool"
   location   = "europe-west1-b"
   cluster    = google_container_cluster.primary.name
   node_count = 3
