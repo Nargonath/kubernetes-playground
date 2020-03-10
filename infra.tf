@@ -51,7 +51,7 @@ resource "google_container_node_pool" "primary_preemptible_nodes" {
     preemptible  = true
     machine_type = "g1-small"
 
-    metadata {
+    metadata = {
       disable-legacy-endpoints = "true"
     }
 
