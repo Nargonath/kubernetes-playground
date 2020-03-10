@@ -30,4 +30,4 @@ This infrastructure will be hosted on GCP.
 
 # Requirements
 
-To work with GCP Terraform needs a service account key.
+To work with GCP Terraform needs a service account key and a GCP project ID.
