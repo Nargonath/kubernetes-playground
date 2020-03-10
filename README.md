@@ -22,7 +22,11 @@ This infrastructure will be hosted on GCP.
 - [ ] Database pod
 - [ ] Database backup
 - [ ] Logging
+  - [ ] Error logging
+  - [ ] Normal logging
 - [ ] Monitoring
+  - [ ] APM
+- [ ] Secret management
 
 # Requirements
 
