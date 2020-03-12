@@ -1,0 +1,20 @@
+name: Server-1
+
+env:
+  CI: true
+
+on: push
+#     paths:
+#       - "server-1/**"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          fetch-depth: 1
+      - name: Build production image
+        working-directory: ./server-1
+        run: docker build -f prod.Dockerfile .
