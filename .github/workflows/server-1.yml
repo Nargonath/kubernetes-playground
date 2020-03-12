@@ -22,3 +22,5 @@ jobs:
           lowercaseTagName="$( echo $tagName | tr '[:upper:]' '[:lower:]' )"
           docker build -f prod.Dockerfile -t "$lowercaseTagName:$GITHUB_RUN_ID" .
           docker tag "$lowercaseTagName:$GITHUB_RUN_ID" "$lowercaseTagName:latest"
+      - name: Push production image
+        run: docker images
