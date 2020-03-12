@@ -18,6 +18,7 @@ jobs:
       - name: Build production image
         working-directory: ./server-1
         run: |
-          tagName="$GITHUB_REPOSITORY/$GITHUB_WORKFLOW:$GITHUB_RUN_ID"
+          tagName="$GITHUB_REPOSITORY/$GITHUB_WORKFLOW"
           lowercaseTagName="$( echo $tagName | tr '[:upper:]' '[:lower:]' )"
-          docker build -f prod.Dockerfile -t $lowercaseTagName .
+          docker build -f prod.Dockerfile -t "$lowercaseTagName:$GITHUB_RUN_ID" .
+          docker tag "$lowercaseTagName:$GITHUB_RUN_ID" "$lowercaseTagName:latest"
