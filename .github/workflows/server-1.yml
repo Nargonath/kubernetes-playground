@@ -17,4 +17,7 @@ jobs:
           fetch-depth: 1
       - name: Build production image
         working-directory: ./server-1
-        run: docker build -f prod.Dockerfile -t "$GITHUB_REPOSITORY/$GITHUB_WORKFLOW:$GITHUB_RUN_ID".
+        run: |
+          tagName="$GITHUB_REPOSITORY/$GITHUB_WORKFLOW:$GITHUB_RUN_ID"
+          lowercaseTagName="$( echo $tagName | tr '[:upper:]' '[:lower:]' )"
+          docker build -f prod.Dockerfile -t $lowercaseTagName .
